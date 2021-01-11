@@ -1,0 +1,512 @@
+/* ==== MEDIA QUERYS ==== */
+@media screen and (min-width: 320px) {
+
+  /* CONTAINER & SECTION */
+  .page_container {
+    padding: 10px 20px;
+  }
+
+  .section {
+    margin: 0px 0px 0px;
+    padding: 50px 0px 0px;
+  }
+
+  /* BASE */
+  .data {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  .img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  /* TITLE & ALIGN */
+  .title h2 {
+    font-size: var(--big-font-size);
+    font-weight: 700;
+  }
+
+  .subtitle {
+    padding-left: 0;
+  }
+
+  .subtitle p::before {
+    left: 0;
+  }
+
+  .align {
+    padding: 10px;
+    margin-top: -30px;
+  }
+
+  /* NAV */
+  .nav_logo {
+    height: 50px;
+    margin-right: 0.25rem;
+  }
+
+  .nav_logo img {
+    width: 90%;
+  }
+
+  /* NAV - TOGGLE */
+
+  .nav_toggle {
+    display: block;
+    z-index: 999;
+  }
+
+  .nav_toggle i.active:before {
+    content: "\f00d";
+    color: var(--text-color);
+  }
+
+  /* HEADER & NAV - SHOW MENU */
+  .show {
+    right: 0;
+  }
+
+  /* HOME */
+  #home {
+    margin: 50px 0px 100px;
+  }
+
+  #home img {
+    width: 90%;
+  }
+
+  .presentation {
+    padding-top: 20px;
+  }
+
+  .myname,
+  .typing {
+    display: block;
+    text-align: center;
+  }
+
+  .icon {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ABOUT */
+  #about .data {
+    flex-wrap: wrap;
+    justify-content: initial;
+  }
+
+  #about .align {
+    display: block;
+  }
+
+  #about .align img {
+    margin-top: 1.25rem;
+  }
+
+  #about-text {
+    border-bottom: 2.5px solid var(--fourth-color);
+    border-left: 2px solid var(--fourth-color);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* EDUCATION */
+  #education .data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #education .align {
+    display: block;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #upper {
+    margin-top: -50px;
+  }
+
+  #lower {
+    /* margin-top: 0.1rem; */
+    padding-top: 30px;
+  }
+
+  .year {
+    margin: -0.8rem 0 0;
+  }
+
+  .course,
+  .job {
+    margin-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  #up .knowledge {
+    margin-left: 0;
+    border-right: solid 2px var(--fourth-color);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top: solid 2px var(--fourth-color);
+  }
+
+  #down .knowledge {
+    margin-left: 0;
+    border-right: solid 2px var(--fourth-color);
+    border-bottom-right-radius: 22px;
+  }
+
+  #down .course {
+    border-bottom-right-radius: 20px;
+  }
+
+  #down .job {
+    border-bottom-right-radius: 20px;
+  }
+
+  /* SKILLS */
+  #data-up {
+    padding-top: 20px;
+  }
+
+  /* PORT */
+  .pitem_m,
+  .pitem_w {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 1rem 2.5rem 0.625rem 2.5rem;
+  }
+
+  #footer_logo {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer_addr {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer_addr .nav_logo {
+    margin: 0;
+  }
+
+  .footer_addr .copy {
+    font-size: 0.65rem;
+  }
+
+  /* FAB */
+  .fab_button {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    right: 3px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  /* HOME */
+  #home {
+    margin: 100px 0px 100px;
+  }
+
+  #home img {
+    width: 100%;
+  }
+
+  /* SKILLS - WEB */
+  #align-web .subtitle p::before {
+    width: 30px;
+  }
+
+  #align-web .subtitle p::after {
+    width: 28px;
+  }
+
+  /* PORT */
+  #port {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+
+  /* HOME */
+  .myname {
+    line-height: 3.5rem;
+  }
+
+  /* ABOUT */
+  #about-text p {
+    text-align: unset;
+  }
+
+  #quote-down {
+    padding-top: 10px;
+    bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  /* CONTAINER & SECTION */
+  .section {
+    margin: 0px 60px 0;
+  }
+
+  /* TITLE */
+  .subtitle {
+    padding-left: 0;
+    font-size: 1.45rem;
+  }
+
+  /* HOME */
+  #home img {
+    width: 50%;
+  }
+
+  /* ABOUT */
+  #quote-down {
+    padding-top: 10px;
+    bottom: -15px;
+  }
+
+  #about .align {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #about-text {
+    padding-bottom: 0;
+  }
+
+  #about img {
+    width: 70%;
+  }
+
+  /* EDUCATION */
+  #education #ctext {
+    padding-left: 0;
+  }
+
+  /* PORT */
+  .pcards {
+    display: flex;
+  }
+
+  .pitem_m,
+  .pitem_w {
+    width: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 1rem 5rem 0.625rem 5rem;
+  }
+
+  .footer_addr {
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: initial;
+  }
+
+  .footer_addr .nav_logo {
+    margin: 0;
+  }
+
+  .footer_addr .copy {
+    font-size: 0.8rem;
+  }
+
+  /* FAB */
+  .fab_button {
+    margin-right: 20px;
+    margin-bottom: -8px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  /* SCROLLBAR */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* NAV */
+  .nav_list {
+    position: fixed;
+    height: 450px;
+    width: 100%;
+    left: 0;
+    top: -100%;
+    background: #fff;
+    border: 2px solid var(--text-color-light);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    padding-top: 30px;
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: 0;
+    font-weight: 500;
+  }
+
+  .nav_list.active {
+    top: 0;
+  }
+
+  .nav_list li {
+    display: block;
+    font-size: 1.4rem;
+  }
+
+  .nav .nav_list li a {
+    display: inline-block;
+    margin: 20px 0;
+    color: #000
+  }
+
+  .nav_item {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* SECTION */
+  .section {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  /* HEADER */
+  #header {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .header {
+    position: sticky;
+    box-shadow: none
+  }
+
+  /* NAV */
+  .nav_list {
+    display: flex;
+    padding-top: 0;
+    margin-left: 2rem;
+  }
+
+  .nav_item {
+    margin-bottom: var(--mr-0);
+    margin-left: var(--mr-6);
+  }
+
+  /* NAV - TOGGLE */
+  .nav_toggle {
+    display: none;
+  }
+
+  /* HOME */
+  #home {
+    margin: 70px 0px 150px;
+    padding: 0;
+  }
+
+  #home .data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home img {
+    width: 100%;
+  }
+
+  .icon {
+    justify-content: unset;
+    align-items: unset;
+    font-size: 1.8rem;
+  }
+
+  /* ABOUT */
+  #about .data {
+    flex-wrap: nowrap;
+    /* justify-content: initial; */
+  }
+
+  #about .align {
+    width: 50%;
+  }
+
+  #about .align img {
+    width: 90%;
+  }
+
+  /* SKILLS */
+  #data-up,
+  #data-down {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .types {
+    padding-right: 1rem;
+  }
+
+
+  #align-web,
+  #align-design,
+  #align-mobile,
+  #align-prog {
+    width: 50%;
+  }
+
+  #sweb,
+  #sdesign,
+  #smobile,
+  #sprog {
+    right: 1rem;
+  }
+
+  /* PORT */
+  .pitem_m,
+  .pitem_w {
+    width: 33.3333%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  /* EDUCATION */
+  #upper,
+  #lower {
+    width: 50%;
+  }
+
+  #upper {
+    margin-top: -30px;
+  }
+
+  #lower {
+    padding-top: 0;
+  }
+}
